@@ -1,0 +1,24 @@
+service : {
+  get_balance: (address: text) ->
+   (record {
+      address: text;
+      balance: float64;
+      unit: text;
+    }) query;
+  get_current_fee_percentiles: () -> (vec nat) query;
+  get_p2pkh_address: () -> (record {address: text;}) query;
+  get_utxos: (address: text) ->
+   (vec record {
+          confirmations: nat;
+          txid: text;
+          value: nat;
+          vout: nat;
+        }) query;
+  send: (destinationAddress: text, amountInSatoshi: nat) ->
+   (record {
+      amount: nat;
+      destination: text;
+      success: bool;
+      txId: text;
+    });
+}
