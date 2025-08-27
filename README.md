@@ -1,4 +1,4 @@
-# Fetch.ai + ICP Integration:
+s# Fetch.ai + ICP Integration:
 
 This project demonstrates a collaborative integration between Internet Computer Protocol (ICP) and Fetch.ai, showcasing how to build a Bitcoin service using ICP canisters in the backend and Fetch.ai agents which can be queried via the AISI:One LLM.
 

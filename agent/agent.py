@@ -18,7 +18,7 @@ import requests
 
 
 # ICP Canister settings
-BACKEND_CANISTER_ID = "YOUR_CANISTER_ID" # Replace with your canister ID
+BACKEND_CANISTER_ID = "uxrrr-q7777-77774-qaaaq-cai" # Replace with your canister ID
 BACKEND_DID = open("../src/declarations/backend/backend.did").read()
 BASE_URL = "http://localhost:4943"  # Replace to https://ic0.app for mainnet ICP
 
@@ -29,7 +29,7 @@ ic_agent = ICAgent(ic_identity, client)
 backend = Canister(agent=ic_agent, canister_id=BACKEND_CANISTER_ID, candid=BACKEND_DID)
 
 # ASI1 API settings
-ASI1_API_KEY = "YOUR_ASI1_API_KEY"  # Replace with your ASI1 key
+ASI1_API_KEY = "asdasdasdasd"  # Replace with your ASI1 key
 ASI1_BASE_URL = "https://api.asi1.ai/v1"
 ASI1_HEADERS = {
     "Authorization": f"Bearer {ASI1_API_KEY}",
